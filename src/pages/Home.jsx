@@ -2,17 +2,15 @@ import React from 'react'
 import Header from '../components/Header'
 import Services from '../components/Services'
 import Accordion from '../components/Accordion'
-import Footer from '../components/Footer'
 import ContactInformation from '../components/ContactInformation'
 
 const Home = () => {
   return (
-    <div>
+    <div className='mx-10'>
      <Header/>
      <Services/>
      <Accordion/>
      <ContactInformation/>
-     <Footer/>
     </div>
   )
 }

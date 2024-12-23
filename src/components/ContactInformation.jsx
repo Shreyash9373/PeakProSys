@@ -2,15 +2,18 @@ import React from "react";
 
 const ContactInformation = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-100 flex flex-col justify-center items-center py-10 px-4 ">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-100 flex flex-col justify-center items-center py-10 px-4 mb-5 rounded-lg">
       {/* Page Title */}
-      <h2 className="text-4xl font-bold text-indigo-700 mb-10 text-center">
+      <h2
+        className="text-center text-4xl font-bold mb-10 text-indigo-700"
+        style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)" }}
+      >
         Get in Touch
       </h2>
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-7xl">
         {/* Contact Form Section */}
-        <div className="bg-white shadow-xl rounded-lg p-8 w-full">
+        <div className="bg-white shadow-xl rounded-lg p-8 w-full h-full">
           <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
             Send us a Message
           </h3>
@@ -74,7 +77,7 @@ const ContactInformation = () => {
         </div>
 
         {/* Contact Info and Map */}
-        <div className="space-y-8 w-full">
+        <div className="space-y-8 w-full rounded-lg">
           {/* Contact Info */}
           <div className="bg-white shadow-xl rounded-lg p-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
