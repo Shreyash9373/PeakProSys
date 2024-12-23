@@ -17,7 +17,7 @@ const Navbar = () => {
           onClick={() => navigate("/")}
           className="w-[5rem] h-[4rem] cursor-pointer"
           src={logo}
-          alt=""
+          alt="Logo"
         />
         <p className="ml-2 font-medium text-lg border-b-gray-400 sm:leading-[1.25rem] hidden lgCustom:block">
           PEAKPROSYS SOLUTIONS
@@ -35,10 +35,16 @@ const Navbar = () => {
           { name: "Workshop", path: "/workshop" },
           { name: "Contact", path: "/contact" },
         ].map((item, index) => (
-          <NavLink key={index} to={item.path}>
-            <li className="py-1 transition-all p-2 rounded-md hover:scale-105 hover:bg-[#2C3892] hover:text-white">
-              {item.name}
-            </li>
+          <NavLink
+            key={index}
+            to={item.path}
+            className={({ isActive }) =>
+              `py-1 transition-all p-2 rounded-md hover:scale-105 ${
+                isActive ? "bg-[#2C3892] text-white" : "hover:bg-[#2C3892] hover:text-white"
+              }`
+            }
+          >
+            <li>{item.name}</li>
           </NavLink>
         ))}
       </ul>
@@ -87,10 +93,15 @@ const Navbar = () => {
               key={index}
               onClick={() => setShowMenu(false)}
               to={item.path}
+              className={({ isActive }) =>
+                `px-4 py-2 rounded-full ${
+                  isActive
+                    ? "bg-[#2C3892] text-white"
+                    : "hover:bg-[#2C3892] hover:text-white"
+                }`
+              }
             >
-              <p className="px-4 py-2 rounded-full hover:bg-[#2C3892] hover:text-white">
-                {item.name}
-              </p>
+              <p>{item.name}</p>
             </NavLink>
           ))}
         </ul>

@@ -11,7 +11,7 @@ import Contact from './pages/Contact.jsx'
 
 const App = () => {
   return (
-    <div className='mx-10'>
+    <div className=''>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
