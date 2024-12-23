@@ -13,10 +13,6 @@ const Home = () => {
      <Accordion/>
      <ContactInformation/>
      <Footer/>
-     <Services/>
-     <Accordion/>
-     <ContactInformation/>
-     <Footer/>
     </div>
   )
 }
