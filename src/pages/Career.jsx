@@ -33,7 +33,12 @@ const Career = () => {
       {/* Job Listings Section */}
       <section id="available-positions" className="py-16 px-4 md:px-8">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-12">Available Positions</h2>
+        <h2
+        className="text-center text-4xl font-bold mb-10 text-indigo-700"
+        style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)" }}
+      >
+        Available Positions
+      </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
