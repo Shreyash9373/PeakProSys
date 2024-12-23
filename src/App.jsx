@@ -8,7 +8,7 @@ import Career from './pages/Career.jsx';
 import Events from './pages/Events.jsx';
 import Workshop from './pages/Workshop.jsx';
 import Contact from './pages/Contact.jsx';
-
+import Footer from './components/Footer.jsx';
 const App = () => {
   return (
     <div className=''>
@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/workshop" element={<Workshop/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
+      <Footer/>
 
     </div> 
   )

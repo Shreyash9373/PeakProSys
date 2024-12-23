@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="flex items-center justify-between text-sm py-4 px-4 mb-5 border-b border-b-[#ADADAD]">
+    <div className="flex sticky z-50 top-0 left-0 bg-gray-100 items-center justify-between text-sm py-4 px-4 mb-5 border-b border-b-[#ADADAD]">
       {/* Logo Section */}
       <div className="flex items-center">
         <img

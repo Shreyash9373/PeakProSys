@@ -7,12 +7,12 @@ import ContactInformation from '../components/ContactInformation.jsx'
 
 const Home = () => {
   return (
-    <div>
+    <div className='mx-10'>
      <Header/>
      <Services/>
      <Accordion/>
      <ContactInformation/>
-     <Footer/>
+     
     </div>
   )
 }

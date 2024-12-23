@@ -2,7 +2,8 @@ import React from "react";
 
 const ContactInformation = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-100 flex flex-col justify-center items-center py-10 px-4 mb-8">
+    //bg-gradient-to-b from-blue-50 to-indigo-100
+    <div className="min-h-screen bg-gray-200 flex flex-col justify-center items-center py-10 px-4 mb-8">
       {/* Page Title */}
       <h2
         className="text-center text-4xl font-bold mb-10 text-indigo-700"

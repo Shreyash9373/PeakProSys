@@ -56,7 +56,7 @@ const Accordion = () => {
           {items.map((item, index) => (
             <div key={index}>
               <div
-                className={`flex items-center justify-between p-4 rounded-lg cursor-pointer  transition-all ${activeIndex === index ? "bg-blue-300" : "bg-gray-200"
+                className={`flex items-center justify-between p-4 rounded-lg cursor-pointer  transition-all ${activeIndex === index ? "bg-[#01B8EA]" : "bg-gray-200"
                   }`}
                 onClick={() => toggleAccordion(index)}
               >

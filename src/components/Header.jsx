@@ -16,7 +16,7 @@ const Header = () => {
   });
 
   return (
-    <div className="flex flex-col md:flex-row bg-blue-300 rounded-lg px-4 sm:px-6 md:px-10 lg:px-20 py-6 md:py-10 lg:py-16 mb-6">
+    <div className="flex flex-col md:flex-row bg-[#01B8EA] rounded-lg px-4 sm:px-6 md:px-10 lg:px-20 py-6 md:py-10 lg:py-16 mb-6">
       {/* --------- Header Left --------- */}
       <div className="md:w-1/2 flex flex-col items-start justify-center gap-4 m-auto">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-black font-bold leading-snug md:leading-tight lg:leading-tight">
