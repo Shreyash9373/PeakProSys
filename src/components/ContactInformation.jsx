@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactInformation = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-100 flex flex-col justify-center items-center py-10 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-100 flex flex-col justify-center items-center py-10 px-4 mb-8">
       {/* Page Title */}
       <h2
         className="text-center text-4xl font-bold mb-10 text-indigo-700"
@@ -87,7 +87,7 @@ const ContactInformation = () => {
                   📍
                 </span>
                 <span className="text-gray-700">
-                Sagar Arcade, Office no.16, 3rd floor, Near Good Luck Cafe, FC Road, Deccan, Pune-411005
+                  Sagar Arcade, Office no.16, 3rd floor, Near Good Luck Cafe, FC Road, Deccan, Pune-411005
                 </span>
               </li>
               <li className="flex items-center">
@@ -116,7 +116,7 @@ const ContactInformation = () => {
               allowFullScreen=""
               loading="lazy"
             ></iframe> */}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15249885.318783779!2d82.75252935!3d21.0680074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x671286d36985f641%3A0x5493c024093ccb86!2sPeakprosys%20Solutions%20Pvt.Ltd.!5e0!3m2!1sen!2sin!4v1734934191065!5m2!1sen!2sin" width="100%"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7566.464410509977!2d73.841639!3d18.518406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf87f5d418d1%3A0x985b331461fa1bd4!2sSagar%20Arcade!5e0!3m2!1sen!2sin!4v1734934924099!5m2!1sen!2sin" width="100%"
               height="300"
               style={{ border: "0" }}
               allowFullScreen=""
