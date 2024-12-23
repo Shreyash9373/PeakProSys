@@ -23,38 +23,41 @@ const Navbar = () => {
         </p>
       </div>
 
-      {/* Desktop Menu */}
-      <ul className="hidden lgCustom:flex items-start gap-5 font-semibold">
-        {[
-          { name: "Home", path: "/" },
-          { name: "About", path: "/about" },
-          { name: "Services", path: "/services" },
-          { name: "Career", path: "/career" },
-          { name: "Events", path: "/events" },
-          { name: "Workshop", path: "/workshop" },
-          { name: "Contact", path: "/contact" },
-        ].map((item, index) => (
-          <NavLink
-            key={index}
-            to={item.path}
-            className={({ isActive }) =>
-              `py-1 transition-all p-2 rounded-md hover:scale-105 ${
-                isActive ? "bg-[#2C3892] text-white" : "hover:bg-[#2C3892] hover:text-white"
-              }`
-            }
-          >
-            <li>{item.name}</li>
-          </NavLink>
-        ))}
-      </ul>
+        {/* Desktop Menu */}
+        <ul className="hidden lgCustom:flex items-start gap-5 font-semibold">
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Services", path: "/services" },
+            { name: "Career", path: "/career" },
+            { name: "Events", path: "/events" },
+            { name: "Workshop", path: "/workshop" },
+            { name: "Contact", path: "/contact" },
+          ].map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.path}
+              className={({ isActive }) =>
+                `py-1 transition-all p-3 rounded-2xl hover:scale-105 ${
+                  isActive
+                    ? "bg-[#2C3892] text-white"
+                    : "hover:bg-[#2C3892] hover:text-white"
+                }`
+              }
+            >
+              <li>{item.name}</li>
+            </NavLink>
+          ))}
+        </ul>
 
-      {/* Hamburger Icon */}
-      <img
-        onClick={() => setShowMenu(true)}
-        className="w-6 lgCustom:hidden cursor-pointer"
-        src={menu_icon}
-        alt="Menu Icon"
-      />
+        {/* Hamburger Icon */}
+        <img
+          onClick={() => setShowMenu(true)}
+          className="w-6 lgCustom:hidden cursor-pointer"
+          src={menu_icon}
+          alt="Menu Icon"
+        />
+      </div>
 
       {/* Mobile Menu */}
       <div
