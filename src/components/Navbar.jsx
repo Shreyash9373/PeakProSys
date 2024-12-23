@@ -57,7 +57,7 @@ const Navbar = () => {
           src={menu_icon}
           alt="Menu Icon"
         />
-      </div>
+      
 
       {/* Mobile Menu */}
       <div
