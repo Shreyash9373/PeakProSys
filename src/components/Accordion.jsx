@@ -42,21 +42,21 @@ const Accordion = () => {
   };
 
   return (
-    <div className="m-5">
+    <div className="m-5 mb-10">
       {/* <h2 className="text-4xl font-bold mb-6 text-cyan-500">
         Our Working Process
       </h2> */}
       <h2
-        className="text-4xl font-bold mb-10 text-indigo-700"
+        className="text-center text-4xl font-bold mb-10 text-indigo-700"
         style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)" }}
       >Our Working Process</h2>
 
       <div className=" flex items-center justify-center px-10">
-        <div className="space-y-2 w-full ">
+        <div className="space-y-2 w-full">
           {items.map((item, index) => (
             <div key={index}>
               <div
-                className={`flex items-center justify-between p-4 rounded-lg cursor-pointer transition-all ${activeIndex === index ? "bg-blue-300" : "bg-gray-100"
+                className={`flex items-center justify-between p-4 rounded-lg cursor-pointer  transition-all ${activeIndex === index ? "bg-blue-300" : "bg-gray-200"
                   }`}
                 onClick={() => toggleAccordion(index)}
               >

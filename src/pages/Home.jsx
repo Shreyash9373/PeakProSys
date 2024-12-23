@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
-import Contact from '../components/Contact'
+// import Contact from '../components/Contact'
 
 const Home = () => {
   return (
     <div>
      <Header/>
-     <Contact/>
+     {/* <Contact/> */}
     </div>
   )
 }
