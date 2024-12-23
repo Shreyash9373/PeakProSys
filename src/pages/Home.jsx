@@ -1,18 +1,16 @@
 import React from 'react'
-import Header from '../components/Header.jsx'
-import Services from '../components/Services.jsx'
-import Accordion from '../components/Accordion.jsx'
-import Footer from '../components/Footer.jsx'
-import ContactInformation from '../components/ContactInformation.jsx'
+import Header from '../components/Header'
+import Services from '../components/Services'
+import Accordion from '../components/Accordion'
+import ContactInformation from '../components/ContactInformation'
 
 const Home = () => {
   return (
-    <div>
+    <div className='mx-10'>
      <Header/>
      <Services/>
      <Accordion/>
      <ContactInformation/>
-     <Footer/>
     </div>
   )
 }

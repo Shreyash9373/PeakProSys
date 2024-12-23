@@ -10,7 +10,7 @@ import qaTestingImg from "../assets/services/qa&testing.png";
 const services = [
   {
     title: "Web Development",
-    bgColor: "bg-cyan-400",
+    bgColor: "bg-sky-400",
     textColor: "text-black",
     image: webDevelopmentImg,
     para: "Creating beautiful, responsive websites and web apps that drive your business forward.",
@@ -50,6 +50,20 @@ const services = [
     image: qaTestingImg,
     para: "Turn to our experts to perform multi-stage testing of your software.",
   },
+  {
+    title: "Artifical Intelligence",
+    bgColor: "bg-cyan-400",
+    textColor: "text-black",
+    image: qaTestingImg,
+    para: "Turn to our experts to perform multi-stage testing of your software.",
+  },
+  {
+    title: "Digital Marketing",
+    bgColor: "bg-blue-200",
+    textColor: "text-black",
+    image: qaTestingImg,
+    para: "Turn to our experts to perform multi-stage testing of your software.",
+  }
 ];
 
 const Services = () => {

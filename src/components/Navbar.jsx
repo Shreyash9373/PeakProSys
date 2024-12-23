@@ -9,52 +9,53 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="flex items-center justify-between text-sm py-4 px-4 mb-5 border-b border-b-[#ADADAD]">
-      {/* Logo Section */}
-      <div className="flex items-center">
+    <div className="sticky top-0 left-0 z-50 bg-white"> {/* Sticky navbar */}
+      <div className="flex items-center justify-between text-sm py-4 px-10 mb-5 border-b">
+        {/* Logo Section */}
+        <div className="flex items-center">
+          <img
+            onClick={() => navigate("/")}
+            className="w-[5rem] h-[4rem] cursor-pointer"
+            src={logo}
+            alt="Logo"
+          />
+        </div>
+
+        {/* Desktop Menu */}
+        <ul className="hidden lgCustom:flex items-start gap-5 font-semibold">
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Services", path: "/services" },
+            { name: "Career", path: "/career" },
+            { name: "Events", path: "/events" },
+            { name: "Workshop", path: "/workshop" },
+            { name: "Contact", path: "/contact" },
+          ].map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.path}
+              className={({ isActive }) =>
+                `py-1 transition-all p-3 rounded-2xl hover:scale-105 ${
+                  isActive
+                    ? "bg-[#2C3892] text-white"
+                    : "hover:bg-[#2C3892] hover:text-white"
+                }`
+              }
+            >
+              <li>{item.name}</li>
+            </NavLink>
+          ))}
+        </ul>
+
+        {/* Hamburger Icon */}
         <img
-          onClick={() => navigate("/")}
-          className="w-[5rem] h-[4rem] cursor-pointer"
-          src={logo}
-          alt="Logo"
+          onClick={() => setShowMenu(true)}
+          className="w-6 lgCustom:hidden cursor-pointer"
+          src={menu_icon}
+          alt="Menu Icon"
         />
-        <p className="ml-2 font-medium text-lg border-b-gray-400 sm:leading-[1.25rem] hidden lgCustom:block">
-          PEAKPROSYS SOLUTIONS
-        </p>
       </div>
-
-      {/* Desktop Menu */}
-      <ul className="hidden lgCustom:flex items-start gap-5 font-semibold">
-        {[
-          { name: "Home", path: "/" },
-          { name: "About", path: "/about" },
-          { name: "Services", path: "/services" },
-          { name: "Career", path: "/career" },
-          { name: "Events", path: "/events" },
-          { name: "Workshop", path: "/workshop" },
-          { name: "Contact", path: "/contact" },
-        ].map((item, index) => (
-          <NavLink
-            key={index}
-            to={item.path}
-            className={({ isActive }) =>
-              `py-1 transition-all p-2 rounded-md hover:scale-105 ${
-                isActive ? "bg-[#2C3892] text-white" : "hover:bg-[#2C3892] hover:text-white"
-              }`
-            }
-          >
-            <li>{item.name}</li>
-          </NavLink>
-        ))}
-      </ul>
-
-      {/* Hamburger Icon */}
-      <img
-        onClick={() => setShowMenu(true)}
-        className="w-6 lgCustom:hidden cursor-pointer"
-        src={menu_icon}
-        alt="Menu Icon"
-      />
 
       {/* Mobile Menu */}
       <div
