@@ -62,7 +62,7 @@ const Accordion = () => {
               >
                 <div className="flex items-center gap-2">
                   <span
-                    className={`font-bold text-lg ${activeIndex === index ? "text-black" : "text-gray-300"
+                    className={`font-bold text-lg ${activeIndex === index ? "text-black" : "text-gray-700"
                       }`}
                   >
                     {item.number}
