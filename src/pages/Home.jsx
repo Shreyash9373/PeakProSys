@@ -4,6 +4,7 @@ import Services from '../components/Services'
 import Accordion from '../components/Accordion'
 import ContactInformation from '../components/ContactInformation'
 
+
 const Home = () => {
   return (
     <div className='mx-10'>

@@ -52,14 +52,14 @@ const services = [
   },
   {
     title: "Artifical Intelligence",
-    bgColor: "bg-cyan-400",
+    bgColor: "bg-[#3871C1]",
     textColor: "text-black",
     image: qaTestingImg,
     para: "Turn to our experts to perform multi-stage testing of your software.",
   },
   {
     title: "Digital Marketing",
-    bgColor: "bg-blue-200",
+    bgColor: "bg-[#01B8EA]",
     textColor: "text-black",
     image: qaTestingImg,
     para: "Turn to our experts to perform multi-stage testing of your software.",
