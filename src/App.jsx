@@ -1,11 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import Team from './components/Team';
+import { Box, AppBar, Toolbar, Button, Typography } from '@mui/material';
 
-const App = () => {
+function App() {
   return (
-    <div className='text-red-400'>
-      Hello world
-    </div>
-  )
+    <Router>
+      
+      <Box>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="*" element={<Typography variant="h5" sx={{ textAlign: 'center', padding: '20px' }}>404 - Page Not Found</Typography>} />
+        </Routes>
+      </Box>
+    </Router>
+  );
 }
 
-export default App
+export default App;
